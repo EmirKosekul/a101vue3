@@ -3,4 +3,22 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import { initializeApp } from "firebase/app";
+import {getFirestore} from "firebase/firestore"
+
+const firebaseConfig = {
+  apiKey: "AIzaSyC7NRhp9DyLBnZ58uUJRlFSjcpHXXKw3s8",
+  authDomain: "vue-web-47c1a.firebaseapp.com",
+  projectId: "vue-web-47c1a",
+  storageBucket: "vue-web-47c1a.appspot.com",
+  messagingSenderId: "581326696060",
+  appId: "1:581326696060:web:e660ccbbeaab797598e3f9"
+};
+
+initializeApp(firebaseConfig);
+const db = getFirestore()
+//const app=createApp(app)
+//app.use(router)
+//app.mount('#app')
+export default db
 createApp(App).use(store).use(router).mount('#app')
