@@ -2,9 +2,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import { createPinia } from "pinia";
+
 
 import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore"
+import { Vue } from 'vue-class-component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyC7NRhp9DyLBnZ58uUJRlFSjcpHXXKw3s8",
@@ -21,4 +24,4 @@ const db = getFirestore()
 //app.use(router)
 //app.mount('#app')
 export default db
-createApp(App).use(store).use(router).mount('#app')
+createApp(App).use(createPinia).use(store).use(router).mount('#app')

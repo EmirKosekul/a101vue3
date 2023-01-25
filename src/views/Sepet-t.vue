@@ -1,5 +1,4 @@
 <template>
-    <div>asdasdasadsd</div>
     <div v-for="todo in todos" :key="todo" >
         <img src="{{ todo.resim }}">
         <p>{{ todo.adi }}</p>
@@ -21,7 +20,7 @@ onMounted(async()=>{
     const todo = {
         adi:doc.data().adi,
         fiyati:doc.data().fiyati,
-        resim:doc.data().resim
+        resim:doc.data().resim,
        }
        fbTodos.push(todo)
     })
