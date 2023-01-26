@@ -4,7 +4,8 @@
     <div class="oneCikanKart">
         <p><img src="https://ayb.akinoncdn.com/products/2022/11/16/2251766/140b9498-1367-4187-9a43-13c53f27ebd3.jpg">Xiaomi Poco M5 128 GB 6 GB RAM Cep Telefonu Siyah</p>
         <button class="redButton">₺6.999,00</button>
-        <button class="blueButton"> Ürünü İncele</button>
+        <router-link to="/r1"><button class="blueButton"> Ürünü İncele</button></router-link>
+        
     </div>
     <div class="oneCikanKart">
         <p><img src="https://ayb.akinoncdn.com/products/2022/11/28/2257279/e0e87426-6439-4a3c-bb9b-45c0d4ebf3ad.jpg">Philips 43PUS7607 43'' UHD Smart Led TV</p>
@@ -14,7 +15,7 @@
     <div class="oneCikanKart">
         <p><img src="https://ayb.akinoncdn.com/products/2022/11/30/2278594/14ddebbf-0e43-449d-b0c0-d2e86deae993.jpg">Revolt RS7 125 Cc Benzinli Motosiklet Gümüş Gri</p>
         <button class="redButton">₺16.799,00</button>
-        <button class="blueButton"> Ürünü İncele</button>
+        <router-link to="/r2"><button class="blueButton"> Ürünü İncele</button></router-link>
     </div>
     <div class="oneCikanKart">
         <p><img src="https://ayb.akinoncdn.com/products/2022/11/16/2251765/405c3cb5-e772-42e3-ada5-39bc245529a2.jpg">Samsung Galaxy M33 5G 128 GB 6 GB RAM Cep Telefonu Yeşil</p>
@@ -29,7 +30,7 @@
     <div class="oneCikanKart">
         <p><img src="https://ayb.akinoncdn.com/products/2022/04/08/143477/3c58507d-9a93-423d-b0c3-a36b3afa993f.jpg">Xiaomi Mop 2 Vacuum Robot Süpürge Beyaz</p>
         <button class="redButton">₺6.799,00</button>
-        <button class="blueButton"> Ürünü İncele</button>
+        <router-link to="/r3"><button class="blueButton"> Ürünü İncele</button></router-link>
     </div>
 
 </div>
