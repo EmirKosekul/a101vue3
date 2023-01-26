@@ -92,6 +92,7 @@ export default{
     methods:{
         async createSut(){          
             const dataObj={
+            id:1,    
             resim:"https://pictures.personaclick.com/resize-images/220/c8b6a5946225d5fbdc1570119c3aab/2400803345213161865.jpg",
             adi:"Pınar Süt Yağlı Küçük Boy 200ml",
             fiyati:"10.90TL",
@@ -100,6 +101,7 @@ export default{
         },
         async createGofret(){          
             const dataObj={
+                id:2,    
             resim:"https://pictures.personaclick.com/resize-images/220/c8b6a5946225d5fbdc1570119c3aab/221128031.jpg",
             adi:"Gofret Bitter Çikolatalı 33g",
             fiyati:"14.90TL",
@@ -108,6 +110,7 @@ export default{
         },
         async createDeterjan(){          
             const dataObj={
+            id:3,
             resim:"https://pictures.personaclick.com/resize-images/220/c8b6a5946225d5fbdc1570119c3aab/2400803345750032703.jpg",
             adi:"Çiçeğim Kireç Çözücü 1L",
             fiyati:"18.90TL",
@@ -115,12 +118,12 @@ export default{
           const docRef=await addDoc(colRef,dataObj)
         },
         async createYag(){          
-            const dataObj={
+            addDoc(collection(db, "Sepetim"), {
             resim:"https://pictures.personaclick.com/resize-images/220/c8b6a5946225d5fbdc1570119c3aab/223345662.jpg",
             adi:"Vera Ayçiçek Yağı Pet 5 L",
             fiyati:"149.50TL",
-          }
-          const docRef=await addDoc(colRef,dataObj)
+            });
+                    
         },
         sutSepet(){
         this.createSut()

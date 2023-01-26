@@ -69,7 +69,7 @@
   const  register = () => { 
     signInWithEmailAndPassword(getAuth(),email.value,password.value)
     .then((data)=>{
-      alert("GirisYapildi")
+      alert("Giris Yapildi")
       router.push("/2")
     })
     .catch((error)=>{

@@ -12,6 +12,7 @@ const router = createRouter({
     {path:"/sepet", component: () =>import("../views/Sepet-t.vue")},
     //{path:"", component: () =>import("../views/ProductList-t.vue")},
     //{path:"/user", component: () =>import("../views/Product-t.vue")},
+    //{path:"/", component: () =>import("../views/Ara-a.vue")},
   ],
 })
 

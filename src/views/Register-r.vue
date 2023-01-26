@@ -69,7 +69,7 @@ const router=useRouter();
 const  register = () => { 
   createUserWithEmailAndPassword(getAuth(),email.value,password.value)
   .then((data)=>{
-    alert("KayitBasarili")
+    alert("Kayit Basarili")
     router.push("/2")
   })
   .catch((error)=>{
