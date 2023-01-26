@@ -58,7 +58,8 @@ input{
 
 <script lang="ts" setup>
 /* eslint-disable no-unused-vars */
-import { ref } from 'vue';
+//import { ref } from 'vue';
+import { ref } from '@vue/composition-api'
 import {getAuth,createUserWithEmailAndPassword} from "firebase/auth";
 import { useRouter } from 'vue-router';
 import headera101 from "../components/header-r.vue"
