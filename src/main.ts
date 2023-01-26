@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import { createPinia } from "pinia";
+import { defineComponent } from '@vue/composition-api'
 
 
 import { initializeApp } from "firebase/app";
@@ -24,4 +25,4 @@ const db = getFirestore()
 //app.use(router)
 //app.mount('#app')
 export default db
-createApp(App).use(createPinia).use(store).use(router).mount('#app')
+createApp(App).use(defineComponent).use(createPinia).use(store).use(router).mount('#app')
